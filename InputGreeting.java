@@ -4,11 +4,12 @@ public class InputGreeting{
 		System.out.println("What is your name?");
 		input = System.console().readLine();
 		System.out.println("Hello " + input);
-
-		while(!input.equals("exit")) {
+		do {
 			System.out.println("What is your name?");
 			input = System.console().readLine();
 			System.out.println("Hello " + input);
-		}
+		} while (!input.equals("exit"));
+		
+		System.out.println("Goodbye!");
 	}
 }
