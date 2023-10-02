@@ -1,5 +1,6 @@
 # Ignore compiled Java files
 *.class
+*.jar
 
 # Ignore build artifacts
 build/
