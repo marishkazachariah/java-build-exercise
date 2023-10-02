@@ -27,7 +27,7 @@ public class UserInterface {
 					person.setLastName(System.console().readLine());
 					break;
 				case "4":
-					System.out.println("Info on person: \n" + person.getFirstName() + "\n" + person.getLastName() + "\n" + person.getAge() + "\n" + person.getGender() + "\n" + person.getEmail());
+					System.out.println("Info on person: \nFirst name: " +  person.getFirstName() + "\nLast name: " + person.getLastName() + "\nAge: " + person.getAge() + "\nGender: " + person.getGender() + "\nEmail: " + person.getEmail());
 					break;
 				case "5":
 					System.out.println("What's the person's email address?");
