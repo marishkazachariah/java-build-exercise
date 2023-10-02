@@ -1,5 +1,5 @@
 public class InputGreeting{
-	public static void main(String[] args){
+	public void getGreeting(){
 		String input = "";
 		System.out.println("What is your name?");
 		input = System.console().readLine();
