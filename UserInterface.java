@@ -1,4 +1,4 @@
-public class UserInterface(){
+public class UserInterface {
 	/**
 	 *  interact with the user
 	 */
@@ -15,27 +15,26 @@ public class UserInterface(){
 		
 		while (!command.equals("6")) {
 			switch(command) {
-				case 1:
-					System.out.println("Full name is: " + person.firstName + " " + person.lastName);
+				case "1":
+					System.out.println("Full name is: " + person.getFirstName() + " " + person.getLastName());
 					break;
-				case 2:
+				case "2":
 					System.out.println("What's the person's first name?");
-					person.firstName = System.console().readLine();
+					person.setFirstName(System.console().readLine());
 					break;
-				case 3:	
+				case "3":
 					System.out.println("What's the person's last name?");
-					person.lastName = System.console().readLine();
+					person.setLastName(System.console().readLine());
 					break;
-				case 4:
-					System.out.println("Info on person: \n"person.firstName + "\n" + person.lastName + "\n" + person.age + "\n" + person.gender + "\n" + person.email);
+				case "4":
+					System.out.println("Info on person: \n" + person.getFirstName() + "\n" + person.getLastName() + "\n" + person.getAge() + "\n" + person.getGender() + "\n" + person.getEmail());
 					break;
-				case 5:
+				case "5":
 					System.out.println("What's the person's email address?");
-					person.email = System.console().readLine();
+					person.setEmail(System.console().readLine());
 					break;
 				default:
 					System.out.println("Invalid input");
-					
 			}
 			System.out.println("What do you want to do?");
                 	System.out.println("1. Show person's full name");
