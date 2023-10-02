@@ -1,5 +1,5 @@
-javac InputGreeting.java
+javac Main.java
 
-jar cvfm NewJar.jar manifest.mf InputGreeting.class
+jar cvfm NewJar.jar MANIFEST.MF Main.class
 
 java -jar NewJar.jar
